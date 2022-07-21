@@ -1,0 +1,211 @@
+@font-face {
+
+    font-family: Minecraft;
+    src: url(assets/font/Minecraft.ttf);
+
+    font-family: pixelFont2;
+    src: url(assets/font/pixelFont2.ttf);
+
+}
+
+h1 {
+    color: #f1f1f1;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse
+}
+
+.parentBackground {
+    position: relative;
+    height: 505px;
+}
+
+
+#boxchat {
+    position: relative;
+    bottom: 45px;
+    width: 500px;
+    font-family: Minecraft;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    border: 3px solid #000000;
+    padding: 10px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.parentButton {
+    display: grid;
+    grid-template-columns: 1fr 1r;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "attaque bouclier"
+        "potionvie potionpoison";
+    justify-items: center;
+    background-color: rgb(186, 186, 186);
+    border: 3px solid #000000;
+    border-radius:  25px;
+
+}
+
+.attaque {
+    grid-area: attaque;
+}
+
+.potionvie {
+    grid-area: potionvie;
+}
+
+.bouclier {
+    grid-area: bouclier;
+}
+
+.potionpoison {
+    grid-area: potionpoison;
+}
+
+
+.parentButton > * {
+    font-family: Minecraft;
+    font-size: 17px;
+    border-radius: 15px;
+    width: 70%;
+    height: 40px;
+    margin: 10px;
+    border-color: #000000;
+}
+
+#pictureC {
+    position: relative;
+    width: 495px;
+    height: 485px;
+    bottom: 0px;
+    image-rendering: pixelated;
+    background-color: aliceblue;
+}
+
+#game {
+    border: 2px solid #f1f1f1;
+}
+
+
+.container {
+    position: relative;
+}
+
+
+#hero {
+    position: absolute;
+    left: 20px;
+    bottom: 165px;
+    width: 170px;
+    height: 200px;
+    image-rendering: pixelated;
+}
+
+#monstre {
+    position: absolute;
+    right: 40px;
+    top: 80px;
+    width: 150px;
+    height: 150px;
+    image-rendering: pixelated;
+
+}
+
+
+.elementParent {
+    position: relative;
+}
+
+#barHero,
+#barMonster {
+    appearance: none;
+}
+
+
+#barHero::-webkit-progress-value,
+#barMonster::-webkit-progress-value {
+    background-color: green;
+    
+
+}
+
+.lifeBarStyleMonster{
+    font-family: Minecraft;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    width: 40%;
+    height: 50px;
+    background-color: white;
+    gap: 10px;
+    border-radius: 10px 0;
+    border: 2px solid #000000;
+    z-index: 1;
+
+}
+
+.lifeBarStyleHero{
+    font-family: Minecraft;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 320px;
+    right: 50px;
+    width: 40%;
+    height: 50px;
+    background-color: white;
+    gap: 10px;
+    border-radius: 10px 0;
+    border: 2px solid #000000;
+    z-index: 1;
+}
+
+
+
+.inventory {
+    display: grid;
+    gap: 10px;
+    border: 3px solid #000000;
+    border-radius: 25px;
+    background-color: rgb(186, 186, 186);    padding: 5px 0 5px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 40px 5px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img {
+    width: 70px;
+    image-rendering: pixelated;
+}

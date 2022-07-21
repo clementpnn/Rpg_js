@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="shortcut icon" href="assets/img/logo.png">
+    <title>THE TOWER GAME</title>
+</head>
+
+<body>
+
+    <h1>The Tower Game</h1>
+
+    <div class="animation">
+        <div class="cloud"></div>
+                    
+        <div class="menu">
+            <button id="nouvelle-partie">Nouvelle partie</button>
+            <button id="credit" onclick="afficherCredit() ; cacherMenu()">Credit</button>
+            <button id="quitter"onclick="quitterPartie()">Quitter</button>
+
+        </div>
+
+        <div class="role">
+            <div class="Gustave">Gustave : Histoire,Combat,Map</div>
+            <div class="Clement">Clement : Map,Deplacement,chatbox</div>
+            <div class="Mehdi">Mehdi : Menu,Combat</div>
+            <div class="Martin">Martin : Design,Map</div>
+            <div class="Emmanuel">Emmanuel : Histoire,Quetes</div>
+        </div>
+
+        <button id="menuButton" onload="cacherCredit()" onclick="cacherCredit() ; afficherMenu()">
+            <img src="/assets/imgMenu/arrow.png" alt="menuButton">
+        </button>
+
+        <audio id="audio" src="/assets/music/musicMenu.mp3"></audio>
+
+        <button id="playStop" onclick="playPause(event)">
+            <img id="sound" src="assets/imgMenu/mute.png" alt="sound">
+        </button>
+
+    </div>
+
+    <script src="assets/js/menu.js" onload="cacherCredit()"></script>
+</body>
+
+
+</html>

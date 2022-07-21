@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RPG</title>
+        <link rel="stylesheet" href="assets/css/combat.css">
+        <link rel="shortcut icon" href="assets/img/logo.png">
+
+    </head>
+    
+    <body>
+        
+        <div class="inventory">
+            <div class="item"><img src="assets/img/perso-head.png" alt="Profile" title="Vous"></div>
+            <div class="item"><span class="sword"></span><img src="assets/imgInventaire/Sword.png" alt="Épée" title="Épée"></div>
+            <div class="item"><span class="armor"></span><img src="assets/imgInventaire/Armure.png" alt="Armure" title="Armure"></div>
+            <div class="item"><span class="shield"></span><img src="assets/imgInventaire/Bouclier.png" alt="Bouclier" title="Bouclier"></div>
+            <div class="item"><span class="potlife"></span><img src="assets/imgInventaire/PotionVie.png" alt="Potion de Vie" title="Potion de Vie (vous rend 20 points de vie)"></div>
+            <div class="item"><span class="potpois"></span><img src="assets/imgInventaire/PotionPoison.png" alt="Potion de poison" title="Potion de poison (enlève 20 points de vie à l'ennemie)"></div>
+        </div> 
+    
+    <main class="container">
+        
+        
+        <div class="parentBackground">
+            
+            
+            <div class="elementParent">
+                
+                <div class="lifeBarStyleHero">PV
+                    <progress id="barMonster"></progress>
+                </div>
+
+                <div class="lifeBarStyleMonster">PV
+                    <progress id="barHero"></progress>
+                </div>
+                
+            </div>
+            
+
+            <img id="pictureC">
+            
+            <div id="boxchat">
+                <span id="chat">Le combat commence</span>
+            </div>
+            
+        </div>
+        
+        
+        <div class="parentButton" id="pictureM">
+            
+            <button class="attaque" id="attaque">Attaque</button>
+            <button class="bouclier" id="bouclier">Bouclier</button>
+            <button class="potionvie" id="potionvie">Potion de vie</button>
+            <button class="potionpoison" id="potionpoison">Potion de poison</button>
+        </div>
+        
+        
+        <img id="hero" src="assets/img/perso-head-up.png">
+        <img id="monstre" src="">
+        <audio id="audio" src="/assets/music/musicCombat.mp3" autoplay></audio>
+    </main>
+    
+    <script src="assets/js/combat.js"></script>
+    
+</body>
+
+</html>

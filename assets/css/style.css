@@ -1,0 +1,210 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#game {
+    border: 2px solid #f1f1f1;
+}
+
+#barHero{
+    background-color: green;
+}
+
+#barMonster{
+    background-color: green;
+}
+
+
+#pictureC {
+    border: 2px solid #f1f1f1;
+    width: 500px;
+    height: 500px;
+}
+    
+
+#pictureM{
+    width: 505px;
+    height: 150px;
+    
+}
+
+#hero{
+    position: absolute;
+    left: 20px;
+    bottom: 260px;
+    width: 170px;
+    height: 200px;
+    image-rendering: pixelated;
+}
+
+
+#monstre{
+    position: absolute;
+    right: 45px;
+    bottom: 250px;
+    width: 150px;
+    height: 150px;
+    image-rendering: pixelated;
+
+}
+
+
+#boxchat{
+    display: block;
+    width: 506px;
+    height: auto;
+    background-color: #f1f1f1;
+    border: 3px solid #000;
+    padding: 10px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Minecraft', sans-serif;
+    padding-bottom: 10px;
+}
+
+
+.inventory {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    display: grid;
+    grid-template: 1fr / repeat(6, 1fr);
+    gap: 5px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    padding: 2px; 
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img {
+    width: 70px;
+    image-rendering: pixelated;
+
+}
+
+.background-lose {
+    width: 100vw;
+    height: 100vh;
+    background: url(/assets/img/lose.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.background-win{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    background: url(/assets/img/win.webp);
+}
+
+.restart{
+    padding: 10px;
+    font-family: Minecraft;
+    font-size: 20px;
+    animation: 5s infinite hover;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-color: rgb(172, 30, 30);
+}
+
+.continue{
+    padding: 10px;
+    font-family: Minecraft;
+    font-size: 20px;
+    animation: 5s infinite hover;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-color: rgb(26, 107, 19);
+}
+
+
+#pictureC {
+    position: relative;
+    border: 3px solid #000000;
+    width: 505px;
+    height: 500px;
+    }
+
+
+.chat-box {
+    display: none;
+}
+
+.chat-box.active {
+    display: block;
+    width: 506px;
+    height: auto;
+    background-color: #f1f1f1;
+    border: 3px solid #000;
+    padding: 10px;
+}
+
+.container-cursor {
+    cursor: pointer;
+}
+
+span {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.player {
+    color: #3A86FF;
+}
+
+.masterGargoyle {
+    color: #FFBE0B;
+}
+
+.narator {
+    color: #8338EC;
+}
+
+.pnj-end {
+    color: #FF006E;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
